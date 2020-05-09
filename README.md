@@ -50,5 +50,6 @@ _mySubObject1Class_ is the class of an object which can be contained in myObject
 
 As seen, myInitDataList is optional and only needed when your object has a list of an undefined number of other objects.
 
-Please see the help() and the test file to see more technical information about these functions.
+The test file has a concrete example.
 
+Please see the help() to see more technical information about these functions.
