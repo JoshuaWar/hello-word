@@ -5,16 +5,14 @@ The aim of this module is to easily save and load any object data into/from a xm
 
 This module has only one object "xmltool" with 2 functions:
 
-For saving an object into a xml tool, you just have to:
--------------------------------------------------------
+#### For saving an object into a xml tool, you just have to:
 myXmltool = xmltool()
 myXmltool.saveObject2xml(myObject,myFilename)
 
-And for loading:
-----------------
+#### And for loading:
 myXmltool.loadObjectFromXml(myObject,myFilename)
 
-## Exception:
+#### Exception:
 If objects have to be dynamically initialized during the data reading process
 (i.e. if your object has a list of an undefined number of other objects), 
 we have to create them first before reading their saved data.
