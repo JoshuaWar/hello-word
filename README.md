@@ -6,9 +6,11 @@ The aim of this module is to easily save and load any object data into/from a xm
 This module has only one object "xmltool" with 2 functions:
 
 #### For saving an object into a xml file, you just have to:
-_$ myXmltool = xmltool()_
+```python
+myXmltool = xmltool()
 
-_$ myXmltool.saveObject2xml(myObject,myFilename)_
+myXmltool.saveObject2xml(myObject,myFilename)
+```
 
 where:
 
@@ -17,7 +19,9 @@ _myObject_ is the object to save
 _myFileName_ if the xml file
 
 #### And for loading:
-_$ myXmltool.loadObjectFromXml(myObject,myFilename)_
+```python
+myXmltool.loadObjectFromXml(myObject,myFilename)
+```
 
 #### Exception:
 If objects have to be dynamically initialized during the data reading process
@@ -26,15 +30,19 @@ we have to create them first before reading their saved data.
 In order to do that, we give a list of object class that we could use to create a new instance of these object.
 
 This list of class objects is a initDataList object and we pass it as:
+```python
 
-_$ myInitDataList.addInitData(mySubObject1Class,(a tuple containing my parameters to initialize this SubObject))_
+myInitDataList = initDataList()
 
-_$ myInitDataList.addInitData(mySubObject2Class,(a tuple containing my parameters to initialize this SubObject))_
+myInitDataList.addInitData(mySubObject1Class,(a tuple containing my parameters to initialize this SubObject))
+
+myInitDataList.addInitData(mySubObject2Class,(a tuple containing my parameters to initialize this SubObject))
 
 ...
 
-_$ myXmltool.loadObjectFromXml(myObject,myInitDataList)_
+myXmltool.loadObjectFromXml(myObject,myInitDataList)
 
 As seen, myInitDataList is optional and only needed when your object has a list of an undefined number of other objects.
 
 Please see the help() to see more technical information about these functions.
+```
