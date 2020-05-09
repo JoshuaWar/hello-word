@@ -9,6 +9,7 @@ This module has only one object "xmltool" with 2 functions:
 myXmltool = xmltool()
 myXmltool.saveObject2xml(myObject,myFilename)
 
+
 #### And for loading:
 myXmltool.loadObjectFromXml(myObject,myFilename)
 
