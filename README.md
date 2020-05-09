@@ -42,14 +42,18 @@ myInitDataList.addInitData(mySubObject2Class,(a tuple containing the parameters 
 
 myXmltool = xmltool()
 
-myXmltool.loadObjectFromXml(myObject,myInitDataList)
+myXmltool.loadObjectFromXml(myObject,myFilename,myInitDataList)
 ```
 where:
 
 >_mySubObject1Class_ is the class of an object which can be contained in myObject
 
+>_myObject_ is the object to save
+
+>_myFileName_ if the xml file
+
 As seen, myInitDataList is optional and only needed when your object has a list of an undefined number of other objects.
 
 The test file has a concrete example.
 
-Please see the help() to see more technical information about these functions.
+Please see the python help() function to see more technical information about these functions.
