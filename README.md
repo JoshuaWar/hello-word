@@ -3,11 +3,15 @@ by Alexandre CHAPELLE
 
 The aim of this module is to easily save and load any object data into/from a xml tool.
 
-This module has only one object "xmltool" with 2 functions.
-_For saving an object into a xml tool, you just have to:_
+This module has only one object "xmltool" with 2 functions:
+
+For saving an object into a xml tool, you just have to:
+-------------------------------------------------------
 myXmltool = xmltool()
 myXmltool.saveObject2xml(myObject,myFilename)
-_And for loading:_
+
+And for loading:
+----------------
 myXmltool.loadObjectFromXml(myObject,myFilename)
 
 ## Exception:
