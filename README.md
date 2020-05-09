@@ -1,4 +1,4 @@
-#EZobject2xml
+# EZobject2xml
 by Alexandre CHAPELLE
 
 The aim of this module is to easily save and load any object data into/from a xml tool.
@@ -10,7 +10,7 @@ myXmltool.saveObject2xml(myObject,myFilename)
 _And for loading:_
 myXmltool.loadObjectFromXml(myObject,myFilename)
 
-##Exception:##
+## Exception: ##
 If objects have to be dynamically initialized during the data reading process
 (i.e. if your object has a list of an undefined number of other objects), 
 we have to create them first before reading their saved data.
